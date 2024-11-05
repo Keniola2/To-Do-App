@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: var(--light);
+    background: var(--darkest);
 } 
 header{
     padding: 2rem 1rem;
@@ -34,7 +34,7 @@ header h1{
     color: var(--pink);
 }
 header h3{
-    color: var(--dark);
+    color: var(--light);
     font-weight: normal;
 }
 #new-task-form{
@@ -47,6 +47,7 @@ input, button {
     appearance: none;
     background: none;
 }
+
 #new-task-input{
     flex: 1 1 0%;
     background-color: var(--dark);
@@ -94,11 +95,14 @@ main{
 #tasks .task{
     display: flex;
     justify-content: space-between;
-    background: var(--darkest);
+    background: var(--dark);
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 
+}
+#tasks .task .content{
+    flex: 1 1 0%;
 }
 #tasks .task .content .text{
     color: var(--light);
@@ -113,6 +117,7 @@ main{
 #tasks .task .actions{
     display: flex;
     margin: 0 -0.5rem;
+    margin-left: 3px;
 }
 .task .actions button{
     cursor: pointer;
